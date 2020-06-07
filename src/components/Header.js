@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 const Header = () => {
@@ -16,9 +16,13 @@ const Header = () => {
           alt="skelly"
           id="skellygif"
         />
-        <Link to="/video" className="nav--link">
+        <a
+          target="blank_"
+          href="https://www.youtube.com/channel/UCFbv2XhL6KFlwPS63GhZnMA"
+          className="nav--link"
+        >
           VIDEO
-        </Link>
+        </a>
         <Link to="/contact" className="nav--link">
           CONTACT
         </Link>
