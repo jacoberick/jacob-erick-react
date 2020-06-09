@@ -1,6 +1,6 @@
 import React from "react";
 
-const Title = () => {
+const Home = () => {
   return (
     <div>
       <h1 id="nameTitle">jacob erick</h1>
@@ -8,4 +8,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default Home;

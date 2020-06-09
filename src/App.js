@@ -1,18 +1,22 @@
 import React from "react";
 import "./App.scss";
 import logo from "./logo.svg";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 //page imports
 import Header from "./components/Header";
-import Title from "./components/Title";
+import Home from "./components/Home";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Title />
+      <Switch>
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Home} />
+      </Switch>
       <Footer />
     </Router>
   );
