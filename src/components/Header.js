@@ -17,7 +17,7 @@ const Header = () => {
           id="skellygif"
         />
         <a
-          target="blank_"
+          target="_blank"
           href="https://www.youtube.com/channel/UCFbv2XhL6KFlwPS63GhZnMA"
           className="nav--link"
         >

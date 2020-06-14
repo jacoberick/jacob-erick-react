@@ -3,8 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <div id="contactText">
-      <h2>ALL INQUIRIES</h2>
-      <h1>INFO[at]JACOBERICK[dot]com</h1>
+      <h1 className="h5">ALL INQUIRIES</h1>
+      <p className="display-3">
+        <a href="mailto:info@jacoberick.com">INFO@JACOBERICK.COM</a>
+      </p>
     </div>
   );
 };

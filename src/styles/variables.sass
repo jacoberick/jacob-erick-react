@@ -1,0 +1,21 @@
+@mixin background($url, $size, $position)
+  background-image: url($url)
+  background-size: $size
+  background-position: $position
+  background-repeat: no-repeat
+
+@mixin flexbox($align, $justify, $direction: row)
+  display: flex
+  align-items: $align
+  justify-content: $justify
+  flex-direction: $direction
+  flex-wrap: wrap
+
+@mixin center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+$mobile: 'only screen and (max-width: 576px)'
+$tablet: 'only screen and (max-width: 768px)'

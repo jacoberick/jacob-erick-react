@@ -1,15 +1,14 @@
+@import "./variables"
+
 body
-  background: url("../images/webmain_red.jpg") no-repeat center
-  background-size: cover
+  @include background("../images/webmain_red.jpg", cover, center)
   height: 100vh
   position: relative
 
   // index styles
 
   .main--nav
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-around
+    @include flexbox(center, space-around)
 
     .nav--link
       font-family: 'Raleway', sans-serif
@@ -19,40 +18,54 @@ body
       text-shadow: -2px 2px 4px #121212
       text-decoration: none
 
+      @media #{$mobile}
+        display: flex
+        flex-direction: column
+
+
     .nav--link:hover
       font-style: italic
 
     #skellygif
       height: 100px
 
+
+
   #nameTitle
-    text-align: center
     font-family: 'Roboto Mono', monospace
-    margin: 200px 30px 0px 0px
     font-size: 7rem
     color: #ffffff
     text-shadow: 0px 0px 100px #121212
+    position: absolute
+    top: 30%
+    left: calc(50% - 20px)
+    transform: translate(-50%)
+    white-space: nowrap
+
+    @media#{$mobile}
+      font-size: 500%
+      left: 50%
+      white-space: normal
+
 
   //contact styles
   #contactText
-    text-align: center
-    margin-top: 150px
-    margin-right: 40px
+    position: absolute
+    top: 25%
+    left: 50%
+    transform: translate(-50%)
 
-    h1
-      font-size: 4rem
-      font-family: 'Roboto', sans-serif
+    a
+      color: #121212
 
   //music styles
   .music
-    position: absolute
-    top: 20rem
+    @include center
     width: 100%
 
     .music--icons
+      @include flexbox(center, space-between)
       font-size: 5rem
-      display: flex
-      justify-content: space-between
       max-width: 50rem
       margin: 0 auto
 
@@ -80,6 +93,9 @@ body
       justify-content: space-between
       max-width: 35rem
       margin: 0 auto
+
+      @media #{$mobile}
+        padding: 0 15px
 
       a
         color: #fff
