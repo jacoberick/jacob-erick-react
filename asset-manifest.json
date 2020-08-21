@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/jacob-erick-react/static/css/main.ff736100.chunk.css",
+    "main.js": "/jacob-erick-react/static/js/main.a43ee4f5.chunk.js",
+    "main.js.map": "/jacob-erick-react/static/js/main.a43ee4f5.chunk.js.map",
+    "runtime-main.js": "/jacob-erick-react/static/js/runtime-main.109f61da.js",
+    "runtime-main.js.map": "/jacob-erick-react/static/js/runtime-main.109f61da.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/jacob-erick-react/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.2f33bf77.chunk.js": "/jacob-erick-react/static/js/2.2f33bf77.chunk.js",
+    "static/js/2.2f33bf77.chunk.js.map": "/jacob-erick-react/static/js/2.2f33bf77.chunk.js.map",
+    "index.html": "/jacob-erick-react/index.html",
+    "precache-manifest.ed58adf1572e54f07a34154f3d2d944d.js": "/jacob-erick-react/precache-manifest.ed58adf1572e54f07a34154f3d2d944d.js",
+    "service-worker.js": "/jacob-erick-react/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/jacob-erick-react/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.ff736100.chunk.css.map": "/jacob-erick-react/static/css/main.ff736100.chunk.css.map",
+    "static/js/2.2f33bf77.chunk.js.LICENSE.txt": "/jacob-erick-react/static/js/2.2f33bf77.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/jacob-erick-react/static/media/logo.5d5d9eef.svg",
+    "static/media/skellygif.gif": "/jacob-erick-react/static/media/skellygif.43152055.gif",
+    "static/media/style.sass": "/jacob-erick-react/static/media/webmain_red.efbfc100.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.109f61da.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.2f33bf77.chunk.js",
+    "static/css/main.ff736100.chunk.css",
+    "static/js/main.a43ee4f5.chunk.js"
+  ]
+}
