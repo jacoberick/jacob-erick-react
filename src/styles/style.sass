@@ -10,24 +10,28 @@ body
   .main--nav
     @include flexbox(center, space-around)
 
-    .nav--link
-      font-family: 'Raleway', sans-serif
-      color: #fff
-      padding-top: 14px
-      font-size: 2rem
-      text-shadow: -2px 2px 4px #121212
-      text-decoration: none
+    .half-nav
+      width: 40%
+      text-align: center
+      display: flex
+      justify-content: space-around
 
-      @media #{$mobile}
-        display: flex
-        flex-direction: column
+      .nav--link
+        font-family: 'Raleway', sans-serif
+        color: #fff
+        padding-top: 14px
+        font-size: 2rem
+        text-shadow: -2px 2px 4px #121212
+        text-decoration: none
+
+      .nav--link:hover
+        font-style: italic
+
+    .middle-nav
 
 
-    .nav--link:hover
-      font-style: italic
-
-    #skellygif
-      height: 100px
+      #skellygif
+        height: 100px
 
 
 
@@ -35,14 +39,14 @@ body
     font-family: 'Roboto Mono', monospace
     font-size: 7rem
     color: #ffffff
-    text-shadow: 0px 0px 100px #121212
+    text-shadow: 0px 0px 75px #121212
     position: absolute
     top: 30%
-    left: calc(50% - 20px)
+    left: calc(50%)
     transform: translate(-50%)
     white-space: nowrap
 
-    @media#{$mobile}
+    @media#{$small}
       font-size: 500%
       left: 50%
       white-space: normal
@@ -57,6 +61,13 @@ body
 
     a
       color: #121212
+
+    a, h1
+      @media#{$small}
+        font-size: 25%
+
+    .display-3
+      margin-top: 0
 
   //music styles
   .music
@@ -94,7 +105,7 @@ body
       max-width: 35rem
       margin: 0 auto
 
-      @media #{$mobile}
+      @media #{$small}
         padding: 0 15px
 
       a

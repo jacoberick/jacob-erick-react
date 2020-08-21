@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
-import "./styles/fonts.scss";
-import "./styles/style.sass";
+import "./styles/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./styles/style.sass";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import logo from "./logo.svg";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 
 //page imports
 import Header from "./components/Header";
@@ -12,7 +12,7 @@ import Music from "./components/Music";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <Header />
       <Switch>
         <Route path="/music" component={Music} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" component={Home} />
       </Switch>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
